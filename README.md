@@ -4,14 +4,20 @@ The Trade Me application allows users to browse categories and listings found in
 
 
 # Screenshots
+
+Phone Screenshots
+
 <p align="center">
    <img src="art/category.png" width="250" />
    <img src="art/listings.png" width="250" />
    <img src="art/specificlisting.png" width="250" />
 </p>
+
+Tablet Screenshots
+
 <p align="center">
-   <img src="art/tablet_category.png" width="450" />
-   <img src="art/tablet_listing.png" width="450" />
+   <img src="art/tablet_category.png" width="400" />
+   <img src="art/tablet_listing.png" width="400" />
 </p>
 
 
