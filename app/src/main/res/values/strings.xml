@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Trade Me</string>
+
+    <string name="title_activity_explore">Explore</string>
+    <string name="title_activity_listing">Listing</string>
+
+    <string name="header_categories">Categories</string>
+    <string name="header_subcategories">Subcategories</string>
+    <string name="header_payment">Payment Details</string>
+
+    <string name="detail_no_listings">No listings found</string>
+    <string name="detail_cannot_load">Unable to load data</string>
+
+    <string name="base_url">https://api.tmsandbox.co.nz/v1/</string>
+    <string name="api_key">A1AC63F0332A131A78FAC304D007E7D1</string>
+    <string name="api_secret">EC7F18B17A062962C6930A8AE88B16C7</string>
+
+</resources>

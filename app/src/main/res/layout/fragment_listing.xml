@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview_listing_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_listing_listingdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/sliderlayout_listing_listingImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/slider_image_height"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/text_margin"
+            android:paddingBottom="@dimen/text_margin">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:id="@+id/textview_listing_listingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:id="@+id/textview_listing_listingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_very_small"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin">
+
+                <ImageView
+                    android:id="@+id/imageview_listing_listingRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin_small"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_public_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:id="@+id/textview_listing_listingRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageview_listing_listingRegion" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin">
+
+                <ImageView
+                    android:id="@+id/imageview_listing_listingBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin_small"
+                    android:src="@drawable/ic_description_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:id="@+id/textview_listing_listingBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageview_listing_listingBody" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="@string/header_payment"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_small">
+
+                <ImageView
+                    android:id="@+id/imageview_listing_listingPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin_small"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:id="@+id/textview_listing_listingPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageview_listing_listingPrice" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin">
+
+                <ImageView
+                    android:id="@+id/imageview_listing_listingPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_margin_small"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_payment_black_24dp"
+                    android:tint="@color/colorAccent"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:id="@+id/textview_listing_listingPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageview_listing_listingPayment" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

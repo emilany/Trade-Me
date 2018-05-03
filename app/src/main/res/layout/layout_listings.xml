@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefreshlayout_listings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_listings_listingslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/text_margin_very_small"
+        android:layout_marginEnd="@dimen/text_margin_very_small"
+        android:paddingStart="@dimen/zero_horizontal_margin"
+        android:paddingEnd="@dimen/zero_horizontal_margin"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>

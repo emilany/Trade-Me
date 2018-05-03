@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_subcategory_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_subcategory_subcategorylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/text_margin_small">
+
+        <TextView
+            style="@style/TextSubheadingStyle"
+            android:id="@+id/textview_subcategory_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/text_margin"
+            android:paddingLeft="@dimen/text_margin_small"
+            android:paddingRight="@dimen/text_margin_small"
+            android:paddingTop="@dimen/text_margin_small"
+            android:text="@string/header_subcategories"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_subcategory_subcategorylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/text_margin_very_small"
+            android:layout_marginEnd="@dimen/text_margin_very_small"
+            android:paddingStart="@dimen/zero_horizontal_margin"
+            android:paddingEnd="@dimen/zero_horizontal_margin"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/textview_subcategory_listingprompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/text_margin"
+        android:paddingLeft="@dimen/text_margin_small"
+        android:paddingRight="@dimen/text_margin_small"
+        android:paddingTop="@dimen/text_margin"
+        android:text="@string/detail_no_listings"
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_listings" />
+
+</LinearLayout>
